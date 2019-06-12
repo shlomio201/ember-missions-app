@@ -1,0 +1,10 @@
+<header>
+    <div id="appTitle">משימות</div>
+    <div id="addMission" {{action "toggleNewMission"}}>
+        <div id="addMissionInner" class="inner">+</div>
+    </div>
+    <div id="newMissionInput" >
+        <input type="text" id="missioninput">
+        <div id="send" {{action (route-action 'addNewMission')}}>V</div>
+    </div>
+</header>

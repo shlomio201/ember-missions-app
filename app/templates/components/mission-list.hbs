@@ -1,0 +1,9 @@
+<div id="missions" >
+    {{#each missions as |mission index|}} 
+    <div class="singleMission" id="single-{{mission.id}}">
+        <div class="doMission {{if mission.done 'done'}}" {{action "doMission" mission}}></div>
+        <div class="misiionTitle {{if mission.done 'done'}}">{{plusone index}}. {{input type="text"  key-press = (action "hadchanges" mission) value = mission.title}}</div>
+        <div class="deleteMission" {{action "updateMission" mission}}>X</div>
+    </div>
+    {{/each}}
+</div>

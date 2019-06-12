@@ -1,0 +1,19 @@
+import Route from '@ember/routing/route';
+
+export default Route.extend({
+
+  model() {
+    return [
+      { id: 1, mission: "משימה 1", done: false },
+      { id: 2, mission: "משימה 2", done: true },
+      { id: 1, mission: "משימה 1", done: true },
+      { id: 2, mission: "משימה 2", done: false },
+      { id: 1, mission: "משימה 1", done: false },
+      { id: 2, mission: "משימה 2", done: false },
+      { id: 1, mission: "משימה 1", done: true },
+      { id: 2, mission: "משימה 2", done: false }
+    ];
+  }
+
+
+});

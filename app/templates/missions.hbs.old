@@ -1,0 +1,2 @@
+<MissionList @title="List of missions" @missions={{this.model}} />
+{{!-- <MissionCounter @data={{this.model}} /> --}}

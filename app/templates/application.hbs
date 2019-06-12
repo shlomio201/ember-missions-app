@@ -1,0 +1,8 @@
+<div class="app">
+    {{!-- <Header /> --}}
+    {{header}}
+    <MissionList @title="List of missions" @missions={{this.model}} />
+    <MissionsCounter @missions={{this.model}} />
+{{outlet}} 
+</div>
+
